@@ -24,7 +24,7 @@ const takePhoto = () => {
 };
 
 const Tab2: React.FC = () => {
-  const { takePhoto } = usePhotoGallery();
+  const { photos, takePhoto } = usePhotoGallery();
 
   return (
     <IonPage>
@@ -34,6 +34,15 @@ const Tab2: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
+        <IonGrid>
+          <IonRow>
+            {photos.map((photo, index) => (
+              <IonCol size="6" key={index}>
+                <IonImg src={photo.webviewPath} />
+              </IonCol>
+            ))}
+          </IonRow>
+        </IonGrid>
         <IonFab vertical="bottom" horizontal="center" slot="fixed">
           <IonFabButton onClick={() => takePhoto()}>
             <IonIcon icon={camera}></IonIcon>
