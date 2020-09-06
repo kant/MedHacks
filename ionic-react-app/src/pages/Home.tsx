@@ -1,6 +1,6 @@
 import React from "react";
-import ExploreContainer from "../components/ExploreContainer";
-import "./Tab2.css";
+
+import "./Home.css";
 import { camera, trash, close } from "ionicons/icons";
 import {
   IonContent,
@@ -23,7 +23,7 @@ const takePhoto = () => {
   return "todo";
 };
 
-const Tab2: React.FC = () => {
+const Home: React.FC = () => {
   const { photos, takePhoto } = usePhotoGallery();
 
   return (
@@ -53,4 +53,4 @@ const Tab2: React.FC = () => {
   );
 };
 
-export default Tab2;
+export default Home;

@@ -1,23 +1,53 @@
-import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import {
+  IonApp,
+  IonContent,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonItem,
+  IonLabel,
+  IonDatetime,
+  IonText,
+  IonButton,
+  IonRouterOutlet,
+  IonFabButton,
+  IonIcon,
+  IonFab,
+  IonPage,
+} from "@ionic/react";
+import { camera } from "ionicons/icons";
+import { IonReactRouter } from "@ionic/react-router";
+import { Redirect, Route } from "react-router-dom";
+import React, { useState } from "react";
+import Logo from "./components/Logo";
+import HomeCard from "./components/HomeCard";
+import TaskList from "./components/TaskList";
+import "./Tab1.css";
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+      <IonHeader></IonHeader>
+      <IonContent className="ion-padding">
+        <IonItem lines="none" className="logo">
+          <Logo></Logo>
+        </IonItem>
+        <HomeCard></HomeCard>
+        <TaskList></TaskList>
+        {/* <IonReactRouter>
+          <IonRouterOutlet>
+            <Route path="/Camera" component={Camera} exact={true} />
+          </IonRouterOutlet>
+        </IonReactRouter> */}
+
+        <IonButton
+          style={{ marginTop: "20%" }}
+          className="get-started"
+          expand="block"
+          href="/Home"
+        >
+          Get Started
+        </IonButton>
       </IonContent>
     </IonPage>
   );
