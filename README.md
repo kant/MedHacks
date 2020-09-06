@@ -2,14 +2,14 @@
 
 ## eye-onic
 
-Clone this repo to your machine and cd into the app directory:
+Clone this repo to your machine and cd into the app directory:<br>
 `cd medhacks/ionic-react-app`
 
-If you don't have ionic CLI installed:
+If you don't have ionic CLI installed:<br>
 `npm install -g @ionic/cli`
 
-Install dependencies:
+Install dependencies:<br>
 `npm install`
 
-And serve!
+And serve!<br>
 `ionic serve`
