@@ -1,26 +1,13 @@
 import {
-  IonApp,
+  IonButton,
   IonContent,
   IonHeader,
-  IonToolbar,
-  IonTitle,
   IonItem,
-  IonLabel,
-  IonDatetime,
-  IonText,
-  IonButton,
-  IonRouterOutlet,
-  IonFabButton,
-  IonIcon,
-  IonFab,
   IonPage,
 } from "@ionic/react";
-import { camera } from "ionicons/icons";
-import { IonReactRouter } from "@ionic/react-router";
-import { Redirect, Route } from "react-router-dom";
-import React, { useState } from "react";
-import Logo from "./components/Logo";
+import React from "react";
 import HomeCard from "./components/HomeCard";
+import Logo from "./components/Logo";
 import TaskList from "./components/TaskList";
 import "./Home.css";
 
@@ -34,12 +21,6 @@ const Tab1: React.FC = () => {
         </IonItem>
         <HomeCard></HomeCard>
         <TaskList></TaskList>
-        {/* <IonReactRouter>
-          <IonRouterOutlet>
-            <Route path="/Camera" component={Camera} exact={true} />
-          </IonRouterOutlet>
-        </IonReactRouter> */}
-
         <IonButton
           style={{ marginTop: "20%" }}
           className="get-started"

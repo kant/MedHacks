@@ -1,15 +1,5 @@
+import { IonContent, IonInput, IonItem, IonList, IonPage } from "@ionic/react";
 import React, { useState } from "react";
-import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar,
-  IonTextarea,
-  IonList,
-  IonInput,
-  IonItem,
-} from "@ionic/react";
 import "./Chat.css";
 
 const Chat: React.FC = () => {

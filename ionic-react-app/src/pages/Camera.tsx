@@ -1,21 +1,16 @@
-import React from "react";
-import { camera, trash, close } from "ionicons/icons";
 import {
+  IonCol,
   IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar,
   IonFab,
   IonFabButton,
-  IonIcon,
   IonGrid,
-  IonRow,
-  IonCol,
+  IonIcon,
   IonImg,
-  IonActionSheet,
-  IonText,
+  IonPage,
+  IonRow,
 } from "@ionic/react";
+import { camera } from "ionicons/icons";
+import React from "react";
 import { usePhotoGallery } from "../hooks/usePhotoGallery";
 
 const takePhoto = () => {
