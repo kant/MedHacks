@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "photo-gallery",
+  "appId": "org.example.eyeonic",
+  "appName": "eye-onic",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
