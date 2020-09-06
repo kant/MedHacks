@@ -32,6 +32,7 @@ import Chat from "./pages/Chat";
 import Home from "./pages/Home";
 /* Theme variables */
 import "./theme/variables.css";
+import Log from "./pages/Log";
 
 const App: React.FC = () => (
   <IonApp>
@@ -41,6 +42,7 @@ const App: React.FC = () => (
           <Route path="/home" component={Home} exact={true} />
           <Route path="/camera" component={Camera} exact={true} />
           <Route path="/chat" component={Chat} />
+          <Route path="/chat2" component={Log} />
           <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">

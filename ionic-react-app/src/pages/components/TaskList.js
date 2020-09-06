@@ -1,16 +1,5 @@
+import { IonCheckbox, IonItem, IonLabel, IonList } from "@ionic/react";
 import React, { useState } from "react";
-import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar,
-  IonCheckbox,
-  IonList,
-  IonItem,
-  IonLabel,
-  IonItemDivider,
-} from "@ionic/react";
 
 const checkboxList = [
   { val: "Take a picture", isChecked: false },

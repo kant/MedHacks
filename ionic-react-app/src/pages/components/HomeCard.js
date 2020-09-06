@@ -1,15 +1,5 @@
+import { IonText } from "@ionic/react";
 import React from "react";
-import {
-  IonCard,
-  IonCardContent,
-  IonText,
-  IonCardTitle,
-  IonCardHeader,
-  IonList,
-  IonItem,
-  IonContent,
-} from "@ionic/react";
-import TaskList from "./TaskList";
 
 function HomeCard() {
   return (
