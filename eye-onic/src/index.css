@@ -1,0 +1,31 @@
+:root {
+  --app-physical-color: green;
+  --app-emotional-color: red;
+  --app-intellectual-color: blue;
+  --ion-background-color: #e2eeff;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.white-bg {
+  background-color: white;
+  text-align: center;
+}
+
+.eye-onic {
+  text-align: center;
+  font-weight: 100;
+}
+
+ion-item {
+  --border-color: white;
+}
+
+ion-checkbox {
+  --border-color: #3880ff;
+}
