@@ -10,9 +10,9 @@ import {
   IonInput,
   IonItem,
 } from "@ionic/react";
-import "./Tab3.css";
+import "./Chat.css";
 
-const Tab3: React.FC = () => {
+const Chat: React.FC = () => {
   const yourMessages: string[] = ["Hello", "How can I help you?"];
   const myMessages: string[] = ["Hi!", "How do I treat a stye?"];
   const [message, setMessage] = useState("");
@@ -53,4 +53,4 @@ const Tab3: React.FC = () => {
   );
 };
 
-export default Tab3;
+export default Chat;

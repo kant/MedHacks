@@ -1,51 +1,56 @@
-import React from "react";
-
-import "./Home.css";
-import { camera, trash, close } from "ionicons/icons";
 import {
+  IonApp,
   IonContent,
   IonHeader,
-  IonPage,
-  IonTitle,
   IonToolbar,
-  IonFab,
+  IonTitle,
+  IonItem,
+  IonLabel,
+  IonDatetime,
+  IonText,
+  IonButton,
+  IonRouterOutlet,
   IonFabButton,
   IonIcon,
-  IonGrid,
-  IonRow,
-  IonCol,
-  IonImg,
-  IonActionSheet,
+  IonFab,
+  IonPage,
 } from "@ionic/react";
-import { usePhotoGallery } from "../hooks/usePhotoGallery";
+import { camera } from "ionicons/icons";
+import { IonReactRouter } from "@ionic/react-router";
+import { Redirect, Route } from "react-router-dom";
+import React, { useState } from "react";
+import Logo from "./components/Logo";
+import HomeCard from "./components/HomeCard";
+import TaskList from "./components/TaskList";
+import "./Home.css";
 
-const takePhoto = () => {
-  return "todo";
-};
-
-const Home: React.FC = () => {
-  const { photos, takePhoto } = usePhotoGallery();
-
+const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonContent>
-        <IonGrid>
-          <IonRow>
-            {photos.map((photo, index) => (
-              <IonCol size="6" key={index}>
-                <IonImg src={photo.base64 ?? photo.webviewPath} />
-              </IonCol>
-            ))}
-          </IonRow>
-        </IonGrid>
-        <IonFab vertical="bottom" horizontal="center" slot="fixed">
-          <IonFabButton onClick={() => takePhoto()}>
-            <IonIcon icon={camera}></IonIcon>
-          </IonFabButton>
-        </IonFab>
+      <IonHeader></IonHeader>
+      <IonContent className="ion-padding">
+        <IonItem lines="none" className="logo">
+          <Logo></Logo>
+        </IonItem>
+        <HomeCard></HomeCard>
+        <TaskList></TaskList>
+        {/* <IonReactRouter>
+          <IonRouterOutlet>
+            <Route path="/Camera" component={Camera} exact={true} />
+          </IonRouterOutlet>
+        </IonReactRouter> */}
+
+        <IonButton
+          style={{ marginTop: "20%" }}
+          className="get-started"
+          expand="block"
+          href="/camera"
+        >
+          Get Started
+        </IonButton>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default Tab1;

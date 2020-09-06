@@ -17,9 +17,9 @@ import {
   homeOutline,
   chatboxEllipsesOutline,
 } from "ionicons/icons";
-import Tab1 from "./pages/Tab1";
 import Home from "./pages/Home";
-import Tab3 from "./pages/Tab3";
+import Camera from "./pages/Camera";
+import Chat from "./pages/Chat";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -45,20 +45,16 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/start" component={Tab1} exact={true} />
-          <Route path="/Home" component={Home} exact={true} />
-          <Route path="/Chat" component={Tab3} />
-          <Route
-            path="/"
-            render={() => <Redirect to="/start" />}
-            exact={true}
-          />
+          <Route path="/home" component={Home} exact={true} />
+          <Route path="/camera" component={Camera} exact={true} />
+          <Route path="/chat" component={Chat} />
+          <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="start" href="/start">
+          <IonTabButton tab="home" href="/home">
             <IonIcon icon={homeOutline} />
           </IonTabButton>
-          <IonTabButton tab="home" href="/home">
+          <IonTabButton tab="camera" href="/camera">
             <IonIcon icon={imagesOutline} />
           </IonTabButton>
           <IonTabButton tab="chat" href="/chat">
