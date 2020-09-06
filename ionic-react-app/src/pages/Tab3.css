@@ -1,0 +1,36 @@
+.innermsg {
+  display: block;
+  padding: 5px 10px;
+  margin: 10px 15px 10px 15px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.innermsg.left {
+  float: left;
+  background-color: white;
+  color: black;
+  clear: both;
+}
+
+.innermsg.right {
+  float: right;
+  background-color: #0084ff;
+  color: white;
+  clear: both;
+}
+
+.msgbubble {
+  margin-bottom: 10px;
+}
+
+.chat-input {
+  border-radius: 10px;
+  background-color: white;
+  width: 90%;
+  --padding-start: 1305px;
+  position: fixed;
+  bottom: 1%;
+}

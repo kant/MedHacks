@@ -11,7 +11,12 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { ellipse, imagesOutline } from "ionicons/icons";
-import { images, square, homeOutline } from "ionicons/icons";
+import {
+  images,
+  square,
+  homeOutline,
+  chatboxEllipsesOutline,
+} from "ionicons/icons";
 import Tab1 from "./pages/Tab1";
 import Home from "./pages/Home";
 import Tab3 from "./pages/Tab3";
@@ -40,20 +45,24 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/tab1" component={Tab1} exact={true} />
+          <Route path="/start" component={Tab1} exact={true} />
           <Route path="/Home" component={Home} exact={true} />
-          <Route path="/tab3" component={Tab3} />
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+          <Route path="/Chat" component={Tab3} />
+          <Route
+            path="/"
+            render={() => <Redirect to="/start" />}
+            exact={true}
+          />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="start" href="/start">
             <IonIcon icon={homeOutline} />
           </IonTabButton>
-          <IonTabButton tab="Home" href="/Home">
+          <IonTabButton tab="home" href="/home">
             <IonIcon icon={imagesOutline} />
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={square} />
+          <IonTabButton tab="chat" href="/chat">
+            <IonIcon icon={chatboxEllipsesOutline} />
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
