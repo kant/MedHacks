@@ -31,14 +31,46 @@ const Chat: React.FC = () => {
           <div className="innermsg right">No</div>
           <div className="innermsg left">Do you experience any floaters?</div>
           <div className="innermsg right">What are floaters?</div>
+
           <div className="innermsg left">
             Floaters are little “cobwebs” or specks that float about in your
             field of vision. They are small, dark, shadowy shapes that can look
             like spots, thread-like strands, or squiggly lines. They move as
             your eyes move and seem to dart away when you try to look at them
-            directly.
+            directly. Read more{" "}
+            <a href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/floaters">
+              here
+            </a>
+            .
           </div>
           <div className="innermsg right">Then yes</div>
+          <div className="innermsg left">
+            How about flashes (visual bursts or streaks of light)?
+          </div>
+          <div className="innermsg right">No</div>
+          <div className="innermsg left">
+            Have you had any nausea or vomiting?
+          </div>
+          <div className="innermsg right">Yes</div>
+          <div className="innermsg left">
+            Do you have a history of migraines?
+          </div>
+          <div className="innermsg right">Yes</div>
+          <div className="innermsg left">
+            Will you please upload a clear image of your eye?
+          </div>
+          <div className="innermsg right">
+            <img
+              style={{ width: "125px" }}
+              src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/eye_color_and_shape_slideshow/650x350_eye_color_and_shape_slideshow.jpg"
+              alt=""
+            />
+          </div>
+          <div className="innermsg left">
+            Based on your headache, floaters, nausea/vomiting, history of
+            migraines, and photo, that appears externally normal, I have
+            predicted that migraines are a likely cause of your visual symptoms.
+          </div>
 
           {/* {yourMessages.map((value, index) => {
             return (
