@@ -13,3 +13,7 @@ Install dependencies:<br>
 
 And serve!<br>
 `ionic serve`
+
+## Devpost
+
+Link to devpost: https://devpost.com/software/eye-onic
