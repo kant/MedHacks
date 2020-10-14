@@ -3,7 +3,7 @@
 Hackathon organized by John Hopkins University
 
 ## Application
-Link to app: https://eyeonic.netlify.app/home
+Link to app: https://eyeonic.netlify.app
 
 ## Installation
 
