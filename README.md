@@ -2,6 +2,9 @@
 
 Hackathon organized by John Hopkins University
 
+## Application
+Link to app: https://eyeonic.netlify.app/home
+
 ## Installation
 
 Clone this repo to your machine and cd into the app directory:<br>
