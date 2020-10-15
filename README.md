@@ -1,6 +1,6 @@
 ![logo](https://medhacks.org/assets/img/logo_dark.png)
 
-Hackathon organized by John Hopkins University
+Hackathon organized by Johns Hopkins University
 
 ## Application
 Link to app: https://eyeonic.netlify.app
